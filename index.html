@@ -6,17 +6,24 @@
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css' rel='stylesheet' />
-<style>
-  body { margin:0; padding:0; }
-  #map { position:absolute; top:0; bottom:0; width:100%; }
-</style>
+<link href='styles.css' rel='stylesheet' />
 </head>
 <body>
+<div class='my-legend'>
+<div class='legend-title'>The imigrating bird map</div>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+    <li><img src="images/food2.png">Food</li>
+    <li><img src="images/hunters.png">Hunters</li>
+    <li><img src="images/animalpattern2.png">Wild Animals</li>
+  </ul>
+</div>
+</div>
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1Ijoib2xseXYiLCJhIjoicTM2bzdtZyJ9.H3TIg0WY3699SmGmyJjmEQ';
 var map = L.mapbox.map('map', 'ollyv.49931c99')
-    .setView([29.9048,32.3707,6], 6);
+    .setView([29.9048,32.3707,7], 7);
 </script> 
 </body>
 </html>
